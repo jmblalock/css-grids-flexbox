@@ -5,12 +5,58 @@ ul {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
-	border: 1px dotted red;
+	border: 5px dotted red;
+	display: flex;
+	/* flex-direction: column; */
+	/* flex-direction: row-reverse; */
+	/* flex-direction: column-reverse; */
+	flex-direction: row; /* <default value> */
+	/* flex-wrap: wrap; */
+	/* flex-wrap: wrap-reverse; */
+	flex-wrap: nowrap; /* <default value> */
+	/* flex-flow: row nowrap;  this takes the place of flex-direction && flex-wrap */
+	flex-flow: wrap;
+	/* justify-content: flex-start; <default value>  */
+	/* justify-content: flex-end; */
+	justify-content: center;
+	/* justify-content: space-between; */
+	/* justify-content: space-around; */
+	/* justify-content: space-evenly; */
+	/* height: 400px; demo code */
+	align-items: stretch; /* <default value>  */
+	/* align-items: flex-start; */
+	/* align-items: flex-end; */
+	/* align-items: center; centers horizontally and vertically in space (awesome) */
 }
 li {
-	border: 1px solid #999;
+	border: 5px solid #999;
 	margin: 0.5em;
 	padding: 0.5em;
+}
+
+.flex2 {
+	border: 5px dashed blue;
+
+	/* order is a number, can be any number */
+	/* the default value is 0 */
+	order: 2;
+
+	/* never use the width property on your flex items, use flex-basis */
+	/* flex-basis: 25%; */
+
+	/* first number is the grow property, the second number is the shrink 
+	property, and the third number is your flex-basis */
+	flex: 2 1 25%;
+}
+
+.flex6 {
+	order: 1;
+}
+.flex3 {
+	order: 2;
+}
+.flex4 {
+	order: 10;
 }
 
 
