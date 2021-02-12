@@ -237,16 +237,4 @@ div.row {
   [class*="sidebar"] {
     flex: 0 0 100%;
   }
-  .order-first {
-    order: 1;
-  }
-  .order-second {
-    order: 2;
-  }
-  .order-third {
-    order: 3
-  }
-  .order-fourth {
-    order: 4;
-  }
 }
