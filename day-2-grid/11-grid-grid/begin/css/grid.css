@@ -30,8 +30,7 @@ div img {
 	float: none;
 	background-color: #fff;
 	display: grid;
-	row-gap: 2%;
-	column-gap: 2%;
+	gap: 2%;
 }
 article {
 	background-color: #ffc;
